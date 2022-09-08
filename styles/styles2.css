@@ -1,0 +1,185 @@
+.principal {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal section p {
+    top: 20px;
+    margin: 0 auto;
+    height: 200px;
+    width: 30%;
+    font-size: 30px;
+}
+
+.parrafoCiudades {
+    display: flex;
+    top: 10px;
+}
+
+#parrafoExperiencias {
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.principal section div {
+    /* width: 850px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.principal section h4 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.imageDestino {
+    width: 400px;
+    height: 200px;
+}
+
+.imageExperiencias {
+    width: 20%;
+}
+
+.tablaConsejos {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 30%;
+    border-collapse: collapse;
+    border: 5px solid crimson;
+}
+
+.tablaConsejosTitulo {
+    font-size: 30px;
+    padding: 20px;
+    border: 3px solid crimson;
+    background-color: crimson;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+}
+
+.tablaConsejosItems {
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid crimson;
+}
+
+.formularioItem {
+    display: block;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.formularioMain {
+    padding: 80px;
+    align-items: center;
+}
+
+.formularioMain section {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.formularioMain section h3  {
+    font-size: 50px;
+}
+
+#formularioFieldset {
+    border: 5px solid crimson;
+    padding: 10px;
+}
+
+#submit {
+    font-size: 20px;
+    width: 20%;
+}
+
+#reset {
+    font-size: 20px;
+    width: 30%;
+}
+
+#acepto {
+    margin-bottom: 10px;
+}
+
+.formularioSubmit {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.piePagina {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    color: white;
+}
+
+.piePagina h4 {
+    /* position: relative; */
+    top: 8px;
+    font-size: 30px;
+}
+
+.piePagina div p {
+    /* position: relative; */
+    top: 15px;
+}
+
+.piePagina div p a {
+    /* position: relative; */
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #grilla {
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: auto;
+      height: 100vh;
+      row-gap: 0px;
+      column-gap: 0px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    #grilla {
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+      height: 100vh;
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+  }
+  
+  
+  @media print {
+    #grilla {
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      height: 100vh;
+      row-gap: 10px;
+      column-gap: 10px;
+    }
