@@ -159,10 +159,6 @@
     transform: scale(1.2);
 }
 
-.avionExperiencias {
-    
-}
-
 .imageExperiencias {
     animation-name: avionExperiencias;
     animation-iteration-count: infinite;
