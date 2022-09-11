@@ -159,8 +159,25 @@
     transform: scale(1.2);
 }
 
+.avionExperiencias {
+    animation-name: avionExperiencias;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
 .imageExperiencias {
     width: 150px;
+    transition: 1s;
+}
+
+@keyframes avionExperiencias {
+    25%{ rotate: 40deg; }
+    50%{ rotate: 50deg;}
+    75%{ rotate: 30deg;}
+    90%{ rotate: 10deg;}
+    100%{rotate: 0deg;}
 }
 
 .tablaConsejos {
