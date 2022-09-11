@@ -48,7 +48,6 @@
 }
 
 .barraMenu ul li:hover {
-    /* transform: skewY(10deg); */
     text-shadow: 10px 5px 5px black;
     font-size: 25px;
 
@@ -153,6 +152,11 @@
     width: 400px;
     height: 200px;
     padding: 3px;
+    transition: 1s;
+}
+
+.imageDestino:hover {
+    transform: scale(1.2);
 }
 
 .imageExperiencias {
