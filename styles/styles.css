@@ -22,7 +22,7 @@
     grid-area: nav;
     display: flex;
     justify-content: space-between;
-    background-color: brown;
+    background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
     height: 80px;
 }
 
@@ -233,7 +233,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
     height: 80px;
     color: white;
 }
