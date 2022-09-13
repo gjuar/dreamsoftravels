@@ -6,58 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Dreams of Travels · Destinos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Dreams of Travels</title>
 </head>
 
-<body id="grilla">
+<body id="grilla" class="container-fluid">
     <!--barra menú-->
-    <nav class="barraMenu">
-        <!--logo-->
-        <img class="logo" src="../img/favicon.png">
-        <!--fin logo-->
-            <!--items menu-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./consejos.html">Consejos</a></li>
-                <li><a href="./experiencias.html">Experiencias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <!--fin items menu-->
-    </nav>
+    <section class="row navBar">
+        <section class="col-12">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold text-light" href="../index.html">
+                        <img src="../img/favicon.png" alt="Logo" class="logo">
+                        DREAMS of TRAVELS
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-light"  href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-light fw-bold active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="./roma.html">Roma</a></li>
+                                  <li><a class="dropdown-item" href="./milan.html">Milán</a></li>
+                                  <li><a class="dropdown-item" href="./barcelona.html">Barcelona</a></li>
+                                  <li><a class="dropdown-item" href="./madrid.html">Madrid</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./consejos.html">Consejos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./experiencias.html">Experiencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./experiencias.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </section>
     <!--fin barra menu-->
     
     <!--cabecera-->
-    <header class="cabecera">        
-        <section class="titulo">
-            <h1>DREAMS of TRAVELS</h1>
-            <h3>Todo lo que necesitas para viajar</h3>
+    <section class="row">
+        <section class="col-12 p-0">
+            <header class="cabecera d-flex align-items-center justify-content-center text-center">        
+                <section class="titulo">
+                    <h1>DREAMS of TRAVELS</h1>
+                    <h3>Todo lo que necesitas para viajar</h3>
+                </section>
+            </header>
         </section>
-    </header>
+    </section>
     <!--fin cabecera-->
-    
+
     <!--contenido-->
-    <main class="contenido">
-        <section>
-            <p>En esta sección encontrarás los mejores destinos que podes visitar con toda la información necesaria de cada uno de ellos.</p>
-                <a title="Roma" href="roma.html"><img class="imageDestino" src="../img/roma1.jpg"></a>
-                <a title="Milán" href="milan.html"><img class="imageDestino" src="../img/milan1.jpg"></a>
-                <a title="Barcelona" href="barcelona.html"><img class="imageDestino" src="../img/barcelona1.jpg"></a>
-                <a title="Madrid" href="madrid.html"><img class="imageDestino" src="../img/madrid1.jpg"></a>
+    <section class="row p-3 justify-content-center">
+        <section class="col-lg-6 col-sm-8 center-block">
+            <main>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Roma"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Milán"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Barcelona"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Madrid"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a><img src="../img/roma1.jpg" class="d-block" alt="Roma">
+                        <div class="carousel-caption d-none d-md-block bg-light opacity-75">
+                          <a href="./roma.html" class="text-light">
+                            <h5 class="text-dark opacity-100">Roma, Italia</h5>
+                          <p class="text-dark opacity-100">La capital de Italia, es una extensa ciudad cosmopolita.</p>
+                        </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/milan1.jpg" class="d-block" alt="Milán">
+                        <div class="carousel-caption d-none d-md-block bg-light opacity-75">
+                        <a href="./milan.html" class="text-light">
+                          <h5 class="text-dark opacity-100">Milán, Italia</h5>
+                          <p class="text-dark opacity-100">Una metrópolis de la región de Lombardía en el norte de Italia.</p>
+                        </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/barcelona1.jpg" class="d-block" alt="Barcelona">
+                        <div class="carousel-caption d-none d-md-block bg-light opacity-75">
+                        <a href="./barcelona.html" class="text-light">
+                          <h5 class="text-dark opacity-100">Barcelona, España</h5>
+                          <p class="text-dark opacity-100">La capital cosmopolita de la región de Cataluña en España, es conocida por su arte y arquitectura.</p>
+                        </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/madrid1.jpg" class="d-block" alt="Madrid">
+                        <div class="carousel-caption d-none d-md-block bg-light opacity-75">
+                        <a href="./madrid.html" class="text-light">
+                          <h5 class="text-dark opacity-100">Madrid, España</h5>
+                          <p class="text-dark opacity-100">La localidad, con categoría histórica de villa, es la capital del Estado y de la Comunidad de Madrid.</p>
+                        </a>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </main>
         </section>
-    </main>
+    </section>    
     <!--fin contenido-->
 
     <!--footer-->
-    <footer class="piePagina">
-        <h4>DREAMS of TRAVELS</h4>
-            <div>
-                <p>
-                    <a href="../index.html">Inicio</a> · <a href="contacto.html">Contacto</a>
-                </p>    
-            </div>
-    </footer>
+    <section class="row">
+        <section class="col-12 p-0">
+            <footer class="piePagina">
+                <h4>DREAMS of TRAVELS</h4>
+                    <p>
+                        <a href="../index.html" class="btn btn-secondary" role="button">Inicio</a>
+                        <a href="./contacto.html" class="btn btn-secondary" role="button">Contacto</a>
+                    </p>
+            </footer>
+        </section>
+    </section>
     <!--fin footer-->
-
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

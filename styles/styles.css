@@ -3,75 +3,29 @@
     padding: 0px;
     font-family: TW Cen MT;
 }
+
 @font-face {
     font-family: TW Cen MT;
     src: url(../fonts/TCCM____.TTF);
 }
 
-#grilla {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "nav"
-    "header"
-    "main"
-    "footer";
-}
-
-.barraMenu {
-    grid-area: nav;
-    display: flex;
-    justify-content: space-between;
+.navBar {
     background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
-    height: 80px;
-}
-
-.barraMenu ul {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding-right: 30px;
-}
-
-.barraMenu ul li {
-    list-style-type: none;
-    padding: 10px;
-    font-size: 20px;
-    transition: text-shadow 1s;
-}
-
-.barraMenu ul li a {
-    list-style-type: none;
-    color: white;
-    text-decoration: none;
-    transition: all 1s;
-}
-
-.barraMenu ul li:hover {
-    text-shadow: 10px 5px 5px black;
-    font-size: 25px;
-
 }
 
 .logo {
-    display: flex;
-    padding: 10px;
-    padding-left: 30px;
+    width: 30px;
     filter: invert(1);
 }
 
 .cabecera {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 300px;
     background-image: url(../img/encabezado.jpg);
 }
 
 .titulo {
     color: white;
-    text-align: center;
 }
 
 .titulo h1 {
@@ -85,27 +39,9 @@
 }
 
 .contenido {
-    grid-area: main;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
     padding: 40px;
-}
-
-.contenido section {
     text-align: center;
-}
-
-.contenido section p {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
     font-size: 30px;
-    padding-bottom: 60px;   
 }
 
 .contenido section h4 {
@@ -246,13 +182,9 @@
 }
 
 .piePagina {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
-    height: 80px;
+    height: 90px;
     color: white;
 }
 
@@ -260,113 +192,12 @@
     font-size: 30px;
 }
 
-.piePagina div p a {
-    text-decoration: none;
-    color: white;
+.carousel-item {
+    width: 600px;
+    height: 300px;
 }
 
-
-
-
-/* MEDIA QUERIE*/
-
-@media screen and (max-width: 768px) {
-    #grilla {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-        "nav"
-        "header"
-        "main"
-        "footer";
-    }
-
-    .barraMenu ul {
-        padding-right: 5px;
-    }
-
-    .logo {
-        padding-left: 5px;
-        scale: 50%;
-        filter: invert(1);
-    }
-
-    .barraMenu ul li {
-        padding: 5px;
-        font-size: 15px;
-    }
-
-    .titulo h1 {
-        font-size: 40px;
-        text-shadow: 3px 3px 3px black;
-    }
-    
-    .titulo h3 {
-        font-size: 20px;
-        text-shadow: 3px 3px 3px black;
-    }
-
-    .contenido {
-        padding: 30px;
-    }
-
-    .contenido section p {
-        width: 200px;
-        font-size: 20px;
-        padding-bottom: 30px;   
-    }
-
-    .contenidoExperiencias section p {
-        width: 200px;
-        font-size: 20px;
-    }
-    
-    .video {
-        width: 300px;
-        height: 200px;
-    }
-
-    .imageDestino {
-        width: 250px;
-        height: 100px;
-        padding: 1px;
-    }
-
-    .ciudades {
-        width: auto;
-    }
-
-    .formularioItem {
-        font-size: 15px;
-    }
-
-    .formularioMain {
-        padding: 0;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    
-    .formularioMain section {
-        width: 300px;
-    }
-    
-    .formularioMain section h3  {
-        font-size: 30px;
-    }
-    
-    #formularioFieldset {
-        border: 3px solid crimson;
-    }
-    
-    #submit {
-        font-size: 15px;
-    }
-    
-    #reset {
-        font-size: 15px;
-    }
-    
-    .formularioSubmit {
-        font-size: 15px;
-    }
+.carousel-item img {
+    width: 100%;
+    height: 300px;
 }
