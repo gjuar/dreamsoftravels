@@ -6,58 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Dreams of Travels · Experiencias</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Dreams of Travels</title>
 </head>
 
-<body id="grilla">
+<body id="grilla" class="container-fluid">
     <!--barra menú-->
-    <nav class="barraMenu">
-        <!--logo-->
-        <img class="logo" src="../img/favicon.png">
-        <!--fin logo-->
-            <!--items menu-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./consejos.html">Consejos</a></li>
-                <li><a href="./experiencias.html">Experiencias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <!--fin items menu-->
-    </nav>
+    <section class="row navBar">
+        <section class="col-12">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold text-light" href="../index.html">
+                        <img src="../img/favicon.png" alt="Logo" class="logo">
+                        DREAMS of TRAVELS
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-light"  href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./destinos.html">Ir a Destinos</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="./roma.html">Roma</a></li>
+                                  <li><a class="dropdown-item" href="./milan.html">Milán</a></li>
+                                  <li><a class="dropdown-item" href="./barcelona.html">Barcelona</a></li>
+                                  <li><a class="dropdown-item" href="./madrid.html">Madrid</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./consejos.html">Consejos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-bold active" aria-current="page" href="#">Experiencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./experiencias.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </section>
     <!--fin barra menu-->
     
     <!--cabecera-->
-    <header class="cabecera">        
-        <section class="titulo">
-            <h1>DREAMS of TRAVELS</h1>
-            <h3>Todo lo que necesitas para viajar</h3>
+    <section class="row">
+        <section class="col-12 p-0">
+            <header class="cabecera d-flex align-items-center justify-content-center text-center">        
+                <section class="titulo">
+                    <h1>DREAMS of TRAVELS</h1>
+                    <h3>Todo lo que necesitas para viajar</h3>
+                </section>
+            </header>
         </section>
-    </header>
+    </section>
     <!--fin cabecera-->
-    
+
     <!--contenido-->
-    <main class="contenido">
-        <section>
-            <p>En esta sección vas a poder encontrar experiencias que puedan servirte como guía.</p>
-            <div>
-                <img class="imageExperiencias" src="../img/favicon1.png">
-            </div>
-            <p id="parrafoExperiencias">Camilla estaba buscando algo, pero no estaba segura de lo que era. Su corazón la llevó a India, y después de ese viaje su vida nunca sería la misma. Los animales pueden tener diferentes impactos en nuestras vidas, pero para esta ex chef vegana, un enorme gato tenía un especial significado.</p>
+    <section class="row">
+        <section class="col-12">
+            <main class="contenido">
+                <section>
+                    <p>En esta sección vas a poder encontrar experiencias que puedan servirte como guía.</p>
+                    <div>
+                        <img class="imageExperiencias" src="../img/favicon1.png">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <p class="parrafoExperiencias ">Camilla estaba buscando algo, pero no estaba segura de lo que era. Su corazón la llevó a India, y después de ese viaje su vida nunca sería la misma. Los animales pueden tener diferentes impactos en nuestras vidas, pero para esta ex chef vegana, un enorme gato tenía un especial significado.</p>
+                    </div>
+                </section>
+            </main>
         </section>
-    </main>
+    </section>
     <!--fin contenido-->
 
     <!--footer-->
-    <footer class="piePagina">
-        <h4>DREAMS of TRAVELS</h4>
-            <div>
-                <p>
-                    <a href="../index.html">Inicio</a> · <a href="contacto.html">Contacto</a>
-                </p>    
-            </div>
-    </footer>
+    <section class="row">
+        <section class="col-12 p-0">
+            <footer class="piePagina">
+                <h4>DREAMS of TRAVELS</h4>
+                    <p>
+                        <a href="../index.html" class="btn btn-secondary" role="button">Inicio</a>
+                        <a href="./contacto.html" class="btn btn-secondary" role="button">Contacto</a>
+                    </p>
+            </footer>
+        </section>
+    </section>
     <!--fin footer-->
-    
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

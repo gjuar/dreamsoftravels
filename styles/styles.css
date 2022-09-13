@@ -48,28 +48,10 @@
     font-size: 40px;
 }
 
-.contenidoExperiencias {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
-}
 
-.contenidoExperiencias section p {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+
+.parrafoExperiencias {
     width: 400px;
-    font-size: 30px;
-}
-
-#parrafoExperiencias {
-    width: 300px;
-    height: 200px;
     font-size: 20px;
 }
 
@@ -82,17 +64,6 @@
 .video {
     width: 500px;
     height: 300px;
-}
-
-.imageDestino {
-    width: 400px;
-    height: 200px;
-    padding: 3px;
-    transition: 1s;
-}
-
-.imageDestino:hover {
-    transform: scale(1.2);
 }
 
 .imageExperiencias {
