@@ -1,4 +1,3 @@
-/*CONFIG*/
 * {
   margin: 0px;
   padding: 0px;
@@ -16,7 +15,6 @@
   grid-template-areas: "nav" "header" "main" "footer";
 }
 
-/*FIN-CONFIG*/
 /*NAV*/
 .barraMenu {
   grid-area: nav;

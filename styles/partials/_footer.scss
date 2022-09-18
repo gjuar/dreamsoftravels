@@ -1,0 +1,19 @@
+/*FOOTER*/
+.piePagina {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
+    height: 80px;
+    color: white;
+    h4 {
+        font-size: 30px;
+    }
+    div p a {
+        text-decoration: none;
+    color: white;
+    }
+}
+/*FIN-FOOTER*/
