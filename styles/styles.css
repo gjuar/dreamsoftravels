@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: TW Cen MT;
 }
+
 @font-face {
     font-family: TW Cen MT;
     src: url(../fonts/TCCM____.TTF);
@@ -10,6 +11,7 @@
 
 #grilla {
     display: grid;
+    grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
     "nav"
@@ -50,7 +52,6 @@
 .barraMenu ul li:hover {
     text-shadow: 10px 5px 5px black;
     font-size: 25px;
-
 }
 
 .logo {
@@ -61,6 +62,7 @@
 }
 
 .cabecera {
+    grid-area: header;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,21 +268,10 @@
 }
 
 
-
-
 /* MEDIA QUERIE*/
 
-@media screen and (max-width: 768px) {
-    #grilla {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-        "nav"
-        "header"
-        "main"
-        "footer";
-    }
 
+@media screen and (max-width: 768px) {
     .barraMenu ul {
         padding-right: 5px;
     }
@@ -288,7 +279,6 @@
     .logo {
         padding-left: 5px;
         scale: 50%;
-        filter: invert(1);
     }
 
     .barraMenu ul li {
