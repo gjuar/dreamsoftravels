@@ -1,0 +1,23 @@
+/*TABLA*/
+.tablaConsejos {
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 5px solid crimson;
+}
+
+.tablaConsejosTitulo {
+    font-size: 30px;
+    padding: 20px;
+    border: 3px solid crimson;
+    background-color: crimson;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+}
+
+.tablaConsejosItems {
+    font-size: 20px;
+    padding: 30px;
+    border: 2px solid crimson;
+}
+/*FIN-TABLA*/
