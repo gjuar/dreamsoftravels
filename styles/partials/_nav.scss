@@ -3,7 +3,7 @@
     grid-area: nav;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
+    background-image: $backgroundNav;
     height: 80px;
     ul {
         display: flex;
