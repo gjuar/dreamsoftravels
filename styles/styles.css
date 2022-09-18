@@ -1,362 +1,369 @@
+/*CONFIG*/
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: TW Cen MT;
+  margin: 0px;
+  padding: 0px;
+  font-family: TW Cen MT;
 }
 
 @font-face {
-    font-family: TW Cen MT;
-    src: url(../fonts/TCCM____.TTF);
+  font-family: TW Cen MT;
+  src: url(../fonts/TCCM____.TTF);
 }
-
 #grilla {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "nav"
-    "header"
-    "main"
-    "footer";
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "nav" "header" "main" "footer";
 }
 
+/*FIN-CONFIG*/
+/*NAV*/
 .barraMenu {
-    grid-area: nav;
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
-    height: 80px;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
+  height: 80px;
 }
-
 .barraMenu ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
 }
-
 .barraMenu ul li {
-    list-style-type: none;
-    padding: 10px;
-    font-size: 20px;
-    transition: text-shadow 1s;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  transition: text-shadow 1s;
 }
-
-.barraMenu ul li a {
-    list-style-type: none;
-    color: white;
-    text-decoration: none;
-    transition: all 1s;
-}
-
 .barraMenu ul li:hover {
-    text-shadow: 10px 5px 5px black;
-    font-size: 25px;
+  text-shadow: 10px 5px 5px black;
+  font-size: 25px;
+}
+.barraMenu ul li a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  transition: all 1s;
 }
 
 .logo {
-    display: flex;
-    padding: 10px;
-    padding-left: 30px;
-    filter: invert(1);
+  display: flex;
+  padding: 10px;
+  padding-left: 30px;
+  filter: invert(1);
 }
 
+/*FIN-NAV*/
+/*HEADER*/
 .cabecera {
-    grid-area: header;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    background-image: url(../img/encabezado.jpg);
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: url(../img/encabezado.jpg);
 }
 
 .titulo {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
-
 .titulo h1 {
-    font-size: 60px;
-    text-shadow: 5px 5px 5px black;
+  font-size: 60px;
+  text-shadow: 5px 5px 5px black;
 }
-
 .titulo h3 {
-    font-size: 40px;
-    text-shadow: 5px 5px 5px black;
+  font-size: 40px;
+  text-shadow: 5px 5px 5px black;
 }
 
+/*FIN-HEADER*/
+/*MAIN*/
 .contenido {
-    grid-area: main;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
+  grid-area: main;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
 }
-
 .contenido section {
-    text-align: center;
+  text-align: center;
 }
-
 .contenido section p {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    font-size: 30px;
-    padding-bottom: 60px;   
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  font-size: 30px;
+  padding-bottom: 60px;
 }
-
 .contenido section h4 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .contenidoExperiencias {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
 }
-
 .contenidoExperiencias section p {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    font-size: 30px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  font-size: 30px;
 }
 
 #parrafoExperiencias {
-    width: 300px;
-    height: 200px;
-    font-size: 20px;
+  width: 300px;
+  height: 200px;
+  font-size: 20px;
 }
 
 .ciudades {
-    display: flex;
-    flex-flow: row wrap;
-    width: 850px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 850px;
 }
 
 .video {
-    width: 500px;
-    height: 300px;
+  width: 500px;
+  height: 300px;
 }
 
 .imageDestino {
-    width: 400px;
-    height: 200px;
-    padding: 3px;
-    transition: 1s;
+  width: 400px;
+  height: 200px;
+  padding: 3px;
+  transition: 1s;
 }
-
 .imageDestino:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .imageExperiencias {
-    animation-name: avionExperiencias;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    width: 150px;
-    transition: 1s;
+  -webkit-animation-name: avionExperiencias;
+          animation-name: avionExperiencias;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 150px;
+  transition: 1s;
 }
 
+/*FIN-MAIN*/
+/*ANIMACION*/
+@-webkit-keyframes avionExperiencias {
+  25% {
+    rotate: 40deg;
+  }
+  50% {
+    rotate: 50deg;
+  }
+  75% {
+    rotate: 30deg;
+  }
+  90% {
+    rotate: 10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
 @keyframes avionExperiencias {
-    25%{ rotate: 40deg; }
-    50%{ rotate: 50deg;}
-    75%{ rotate: 30deg;}
-    90%{ rotate: 10deg;}
-    100%{rotate: 0deg;}
+  25% {
+    rotate: 40deg;
+  }
+  50% {
+    rotate: 50deg;
+  }
+  75% {
+    rotate: 30deg;
+  }
+  90% {
+    rotate: 10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }
-
+/*FIN-ANIMACION*/
+/*TABLA*/
 .tablaConsejos {
-    margin: 0 auto;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border: 5px solid crimson;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 5px solid crimson;
 }
 
 .tablaConsejosTitulo {
-    font-size: 30px;
-    padding: 20px;
-    border: 3px solid crimson;
-    background-color: crimson;
-    color: white;
-    text-shadow: 2px 5px 5px black;
+  font-size: 30px;
+  padding: 20px;
+  border: 3px solid crimson;
+  background-color: crimson;
+  color: white;
+  text-shadow: 2px 5px 5px black;
 }
 
 .tablaConsejosItems {
-    font-size: 20px;
-    padding: 30px;
-    border: 2px solid crimson;
+  font-size: 20px;
+  padding: 30px;
+  border: 2px solid crimson;
 }
 
+/*FIN-TABLA*/
+/*FORMULARIO*/
 .formularioItem {
-    display: flex;
-    padding: 3px;
-    font-size: 20px;
+  display: flex;
+  padding: 3px;
+  font-size: 20px;
 }
 
 .formularioMain {
-    padding: 80px;
-    align-items: center;
+  padding: 80px;
+  align-items: center;
 }
-
 .formularioMain section {
-    width: 500px;
-    margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
 }
-
-.formularioMain section h3  {
-    font-size: 50px;
+.formularioMain section h3 {
+  font-size: 50px;
 }
 
 #formularioFieldset {
-    border: 5px solid crimson;
-    padding: 10px;
+  border: 5px solid crimson;
+  padding: 10px;
 }
 
 #submit {
-    font-size: 20px;
-    width: 20%;
+  font-size: 20px;
+  width: 20%;
 }
 
 #reset {
-    font-size: 20px;
-    width: 30%;
+  font-size: 20px;
+  width: 30%;
 }
 
 #acepto {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .formularioSubmit {
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: 15px;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
+/*FIN-FORMULARIO*/
+/*FOOTER*/
 .piePagina {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
-    height: 80px;
-    color: white;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
+  height: 80px;
+  color: white;
 }
-
 .piePagina h4 {
-    font-size: 30px;
+  font-size: 30px;
 }
-
 .piePagina div p a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-
-/* MEDIA QUERIE*/
-
-
+/*FIN-FOOTER*/
+/*MEDIA-QUERIE*/
 @media screen and (max-width: 768px) {
-    .barraMenu ul {
-        padding-right: 5px;
-    }
-
-    .logo {
-        padding-left: 5px;
-        scale: 50%;
-    }
-
-    .barraMenu ul li {
-        padding: 5px;
-        font-size: 15px;
-    }
-
-    .titulo h1 {
-        font-size: 40px;
-        text-shadow: 3px 3px 3px black;
-    }
-    
-    .titulo h3 {
-        font-size: 20px;
-        text-shadow: 3px 3px 3px black;
-    }
-
-    .contenido {
-        padding: 30px;
-    }
-
-    .contenido section p {
-        width: 200px;
-        font-size: 20px;
-        padding-bottom: 30px;   
-    }
-
-    .contenidoExperiencias section p {
-        width: 200px;
-        font-size: 20px;
-    }
-    
-    .video {
-        width: 300px;
-        height: 200px;
-    }
-
-    .imageDestino {
-        width: 250px;
-        height: 100px;
-        padding: 1px;
-    }
-
-    .ciudades {
-        width: auto;
-    }
-
-    .formularioItem {
-        font-size: 15px;
-    }
-
-    .formularioMain {
-        padding: 0;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    
-    .formularioMain section {
-        width: 300px;
-    }
-    
-    .formularioMain section h3  {
-        font-size: 30px;
-    }
-    
-    #formularioFieldset {
-        border: 3px solid crimson;
-    }
-    
-    #submit {
-        font-size: 15px;
-    }
-    
-    #reset {
-        font-size: 15px;
-    }
-    
-    .formularioSubmit {
-        font-size: 15px;
-    }
+  .barraMenu ul {
+    padding-right: 5px;
+  }
+  .logo {
+    padding-left: 5px;
+    scale: 50%;
+  }
+  .barraMenu ul li {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .titulo h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+  }
+  .titulo h3 {
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+  }
+  .contenido {
+    padding: 30px;
+  }
+  .contenido section p {
+    width: 200px;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .contenidoExperiencias section p {
+    width: 200px;
+    font-size: 20px;
+  }
+  .video {
+    width: 300px;
+    height: 200px;
+  }
+  .imageDestino {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+  }
+  .ciudades {
+    width: auto;
+  }
+  .formularioItem {
+    font-size: 15px;
+  }
+  .formularioMain {
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .formularioMain section {
+    width: 300px;
+  }
+  .formularioMain section h3 {
+    font-size: 30px;
+  }
+  #formularioFieldset {
+    border: 3px solid crimson;
+  }
+  #submit {
+    font-size: 15px;
+  }
+  #reset {
+    font-size: 15px;
+  }
+  .formularioSubmit {
+    font-size: 15px;
+  }
 }
+/*FIN-MEDIA-QUERIE*//*# sourceMappingURL=styles.css.map */
