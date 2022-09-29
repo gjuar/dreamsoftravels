@@ -101,7 +101,7 @@
   font-size: 30px;
   padding-bottom: 60px;
 }
-.contenido section h4 {
+.contenido h4 {
   font-size: 40px;
 }
 
@@ -144,7 +144,7 @@
   width: 400px;
   height: 200px;
   padding: 3px;
-  transition: 1s;
+  transition: 0.5s;
 }
 .imageDestino:hover {
   transform: scale(1.2);

@@ -16,13 +16,13 @@
             align-items: center;
             width: 400px;
             font-size: map-get($fonts, mainText);
-            padding-bottom: 60px;   
+            padding-bottom: 60px;
+            }
         }
         h4 {
             font-size: 40px;
         }
     }
-}
 
 .contenidoExperiencias {
     display: flex;
@@ -63,7 +63,7 @@
     width: 400px;
     height: 200px;
     padding: 3px;
-    transition: 1s;
+    transition: 0.5s;
     &:hover {
         transform: scale(1.2);
     }
