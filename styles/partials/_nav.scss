@@ -1,0 +1,38 @@
+/*NAV*/
+.barraMenu {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    background-image: $backgroundNav;
+    height: 80px;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+        li {
+            list-style-type: none;
+            padding: 10px;
+            font-size: 20px;
+            transition: text-shadow 1s;
+            &:hover {
+                text-shadow: 10px 5px 5px black;
+                font-size: 25px;
+            }
+            a {
+            list-style-type: none;
+            color: white;
+            text-decoration: none;
+            transition: all 1s;
+            }
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+    filter: invert(1);
+}
+/*FIN-NAV*/

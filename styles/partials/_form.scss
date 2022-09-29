@@ -1,0 +1,45 @@
+/*FORMULARIO*/
+.formularioItem {
+    display: flex;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.formularioMain {
+    padding: 80px;
+    align-items: center;
+    section {
+        width: 500px;
+        margin: 0 auto;
+        h3 {
+            font-size: 50px;
+        }
+    }
+}
+
+#formularioFieldset {
+    border: 5px solid $colorPrincipal;
+    padding: 10px;
+}
+
+#submit {
+    font-size: 20px;
+    width: 20%;
+}
+
+#reset {
+    font-size: 20px;
+    width: 30%;
+}
+
+#acepto {
+    margin-bottom: 10px;
+}
+
+.formularioSubmit {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+/*FIN-FORMULARIO*/

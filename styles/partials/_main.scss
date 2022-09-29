@@ -1,0 +1,91 @@
+/*MAIN*/
+.contenido {
+    grid-area: main;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    section {
+        text-align: center;
+        p {
+            margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        font-size: 30px;
+        padding-bottom: 60px;   
+        }
+        h4 {
+            font-size: 40px;
+        }
+    }
+}
+
+.contenidoExperiencias {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    section p {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        font-size: 30px;
+    }
+}
+
+#parrafoExperiencias {
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.ciudades {
+    display: flex;
+    flex-flow: row wrap;
+    width: 850px;
+}
+
+.video {
+    width: 500px;
+    height: 300px;
+}
+
+.imageDestino {
+    width: 400px;
+    height: 200px;
+    padding: 3px;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.imageExperiencias {
+    animation-name: avionExperiencias;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    width: 150px;
+    transition: 1s;
+}
+/*FIN-MAIN*/
+
+/*ANIMACION*/
+@keyframes avionExperiencias {
+    25%{ rotate: 40deg; }
+    50%{ rotate: 50deg;}
+    75%{ rotate: 30deg;}
+    90%{ rotate: 10deg;}
+    100%{rotate: 0deg;}
+}
+/*FIN-ANIMACION*/
