@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: TW Cen MT;
+}
+
+@font-face {
+    font-family: TW Cen MT;
+    src: url(../fonts/TCCM____.TTF);
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+}

@@ -292,18 +292,17 @@
 }
 
 /*FIN-TABLA*/
-/*MEDIA-QUERIE*/
 @media screen and (max-width: 768px) {
   .barraMenu ul {
     padding-right: 5px;
   }
-  .logo {
-    padding-left: 5px;
-    scale: 50%;
-  }
   .barraMenu ul li {
     padding: 5px;
     font-size: 15px;
+  }
+  .logo {
+    padding-left: 5px;
+    scale: 50%;
   }
   .titulo h1 {
     font-size: 40px;
@@ -363,5 +362,4 @@
   .formularioSubmit {
     font-size: 15px;
   }
-}
-/*FIN-MEDIA-QUERIE*//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
