@@ -18,35 +18,50 @@
 }
 
 .buttonIg {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: #c13584;
     padding: 8px;
     border: 0;
-    border-radius: 10px;
-    border-bottom: 3px solid #7069f0;
+    border-radius: 6px;
+    border-bottom: 2px solid #e1306c;
     color: white;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
     width: 80px;
+    &:hover {
+        filter: saturate(150%);
+        border-color: white;
+    }
 }
 
 .buttonFb {
     background: #3b5998;
     padding: 8px;
     border: 0;
-    border-radius: 10px;
-    border-bottom: 3px solid #5075c4;
+    border-radius: 6px;
+    border-bottom: 2px solid #5075c4;
     color: white;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
     width: 80px;
+    &:hover {
+        filter: saturate(150%);
+        border-color: white;
+    }
 }
 
 .buttonTw {
     background: #1DA1F2;
     padding: 8px;
     border: 0;
-    border-radius: 10px;
-    border-bottom: 3px solid #47b9ff;
+    border-radius: 6px;
+    border-bottom: 2px solid #47b9ff;
     color: white;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
     width: 80px;
+    &:hover {
+        filter: saturate(150%);
+        border-color: white;
+    }
 }
 /*FIN-FOOTER*/
