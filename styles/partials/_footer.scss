@@ -2,8 +2,8 @@
 .piePagina {
     grid-area: footer;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     background-image: map-get($colores, gradientFooter);
     height: 80px;
@@ -15,5 +15,38 @@
         text-decoration: none;
         color: white;
     }
+}
+
+.buttonIg {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid #7069f0;
+    color: white;
+    font-size: 20px;
+    width: 80px;
+}
+
+.buttonFb {
+    background: #3b5998;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid #5075c4;
+    color: white;
+    font-size: 20px;
+    width: 80px;
+}
+
+.buttonTw {
+    background: #1DA1F2;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid #47b9ff;
+    color: white;
+    font-size: 20px;
+    width: 80px;
 }
 /*FIN-FOOTER*/
