@@ -3,6 +3,7 @@ En index.html sume el SEO con las siguientes características:
 •	Con la etiqueta meta name keywords agregue palabras claves: “viajes,vuelos, vacaciones, turismo”.
 •	Con la etiqueta meta name description agregue una pequeña descripción de la página: “En Dreams of Travels encontrarás todo lo que necesitas para realizar el viaje de tus sueños. Info sobre los destinos, consejos, experiencias y muchas más!”.
 •	Utilice el título “DREAMS of TRAVELS” para el encabezado h1 y la descripción “Todo lo que necesitas para viajar” para el encabezado h2 en todas las páginas del sitio.
+•	Utilice la etiqueta title para asignarle un titulo a cada pagina del sitio.
 
 En destinos.html sume el SEO con las siguientes características:
 •	Con la etiqueta meta name keywords agregue palabras claves: “viajes, vuelos, vacaciones, turismo, españa, italia, barcelona, madrid, milan, roma”.
