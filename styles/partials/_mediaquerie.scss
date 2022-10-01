@@ -85,4 +85,18 @@
     .formularioSubmit {
         font-size: 15px;
     }
+
+    .piePagina {
+    flex-direction: column;
+    height: 100px;
+    }
+
+    %botonRedes {
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    width: 60px;
+    }
+
 }

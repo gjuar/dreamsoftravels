@@ -1,2 +1,13 @@
 %botonRedes {
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+    width: 80px;
+    &:hover {
+        filter: saturate(150%);
+        border-color: white;
+    }
 }

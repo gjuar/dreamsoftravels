@@ -1,3 +1,17 @@
+.buttonTw, .buttonFb, .buttonIg {
+  padding: 8px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+  width: 80px;
+}
+.buttonTw:hover, .buttonFb:hover, .buttonIg:hover {
+  filter: saturate(150%);
+  border-color: white;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -223,50 +237,17 @@
 
 .buttonIg {
   background: #c13584;
-  padding: 8px;
-  border: 0;
-  border-radius: 6px;
   border-bottom: 2px solid #e1306c;
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px black;
-  width: 80px;
-}
-.buttonIg:hover {
-  filter: saturate(150%);
-  border-color: white;
 }
 
 .buttonFb {
   background: #3b5998;
-  padding: 8px;
-  border: 0;
-  border-radius: 6px;
   border-bottom: 2px solid #5075c4;
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px black;
-  width: 80px;
-}
-.buttonFb:hover {
-  filter: saturate(150%);
-  border-color: white;
 }
 
 .buttonTw {
   background: #1DA1F2;
-  padding: 8px;
-  border: 0;
-  border-radius: 6px;
   border-bottom: 2px solid #47b9ff;
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px black;
-  width: 80px;
-}
-.buttonTw:hover {
-  filter: saturate(150%);
-  border-color: white;
 }
 
 /*FIN-FOOTER*/
@@ -409,5 +390,16 @@
   }
   .formularioSubmit {
     font-size: 15px;
+  }
+  .piePagina {
+    flex-direction: column;
+    height: 100px;
+  }
+  .buttonIg, .buttonFb, .buttonTw {
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    width: 60px;
   }
 }/*# sourceMappingURL=styles.css.map */
