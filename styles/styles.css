@@ -154,14 +154,52 @@
   height: 300px;
 }
 
-.imageDestino {
+.imgRoma {
   width: 400px;
   height: 200px;
-  padding: 3px;
+  padding: 2px;
   transition: 0.5s;
 }
-.imageDestino:hover {
-  transform: scale(1.2);
+.imgRoma:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: crimson;
+}
+
+.imgMilan {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgMilan:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: black;
+}
+
+.imgBarcelona {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgBarcelona:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: blue;
+}
+
+.imgMadrid {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgMadrid:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: yellow;
 }
 
 .imageExperiencias {

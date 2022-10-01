@@ -59,14 +59,20 @@
     height: 300px;
 }
 
-.imageDestino {
-    width: 400px;
-    height: 200px;
-    padding: 3px;
-    transition: 0.5s;
-    &:hover {
-        transform: scale(1.2);
-    }
+.imgRoma {
+    @include destinos ($imgBorder: crimson)
+}
+
+.imgMilan {
+    @include destinos ($imgBorder: black)
+}
+
+.imgBarcelona {
+    @include destinos ($imgBorder: blue)
+}
+
+.imgMadrid {
+    @include destinos ($imgBorder: yellow)
 }
 
 .imageExperiencias {
