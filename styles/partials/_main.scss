@@ -59,6 +59,11 @@
     height: 300px;
 }
 
+.imageDestino {
+    width: 400px;
+    height: 200px;
+}
+
 .imgRoma {
     @include destinos ($imgBorder: crimson)
 }
