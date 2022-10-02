@@ -1,0 +1,11 @@
+@mixin destinos($imgBorder) {
+    width: 400px;
+    height: 200px;
+    padding: 2px;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.05);
+        border-style: solid;
+        border-color: $imgBorder;
+    }
+}

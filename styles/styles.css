@@ -1,3 +1,18 @@
+.buttonTw, .buttonFb, .buttonIg {
+  padding: 8px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+  width: 80px;
+}
+.buttonTw:hover, .buttonFb:hover, .buttonIg:hover {
+  filter: saturate(150%);
+  border-color: white;
+  cursor: pointer;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -15,7 +30,6 @@
   grid-template-areas: "nav" "header" "main" "footer";
 }
 
-/*NAV*/
 .barraMenu {
   grid-area: nav;
   display: flex;
@@ -23,37 +37,50 @@
   background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
   height: 80px;
 }
-.barraMenu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 30px;
+.barraMenu div {
+  align-self: center;
 }
-.barraMenu ul li {
-  list-style-type: none;
-  padding: 10px;
-  font-size: 20px;
-  transition: text-shadow 1s;
-}
-.barraMenu ul li:hover {
-  text-shadow: 10px 5px 5px black;
-  font-size: 25px;
-}
-.barraMenu ul li a {
-  list-style-type: none;
-  color: white;
+.barraMenu div ul li a {
   text-decoration: none;
-  transition: all 1s;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px black;
+}
+.barraMenu div ul li a:hover {
+  text-shadow: 3px 3px 5px black;
+}
+.barraMenu input {
+  display: none;
+}
+.barraMenu label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navIconTitle {
+  padding-left: 20px;
 }
 
 .logo {
-  display: flex;
-  padding: 10px;
-  padding-left: 30px;
+  width: 30px;
   filter: invert(1);
 }
 
-/*FIN-NAV*/
+.titleNav {
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  padding-left: 5px;
+}
+
 /*HEADER*/
 .cabecera {
   grid-area: header;
@@ -73,7 +100,7 @@
   font-size: 60px;
   text-shadow: 5px 5px 5px black;
 }
-.titulo h3 {
+.titulo h2 {
   font-size: 40px;
   text-shadow: 5px 5px 5px black;
 }
@@ -101,7 +128,7 @@
   font-size: 30px;
   padding-bottom: 60px;
 }
-.contenido section h4 {
+.contenido h4 {
   font-size: 40px;
 }
 
@@ -143,11 +170,54 @@
 .imageDestino {
   width: 400px;
   height: 200px;
-  padding: 3px;
-  transition: 1s;
 }
-.imageDestino:hover {
-  transform: scale(1.2);
+
+.imgRoma {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgRoma:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: crimson;
+}
+
+.imgMilan {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgMilan:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: black;
+}
+
+.imgBarcelona {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgBarcelona:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: blue;
+}
+
+.imgMadrid {
+  width: 400px;
+  height: 200px;
+  padding: 2px;
+  transition: 0.5s;
+}
+.imgMadrid:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-color: yellow;
 }
 
 .imageExperiencias {
@@ -206,19 +276,34 @@
 .piePagina {
   grid-area: footer;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
   height: 80px;
   color: white;
 }
-.piePagina h4 {
+.piePagina h3 {
   font-size: 30px;
 }
 .piePagina div p a {
   text-decoration: none;
   color: white;
+}
+
+.buttonIg {
+  background: #c13584;
+  border-bottom: 2px solid #e1306c;
+}
+
+.buttonFb {
+  background: #3b5998;
+  border-bottom: 2px solid #5075c4;
+}
+
+.buttonTw {
+  background: #1DA1F2;
+  border-bottom: 2px solid #47b9ff;
 }
 
 /*FIN-FOOTER*/
@@ -292,18 +377,47 @@
 }
 
 /*FIN-TABLA*/
-/*MEDIA-QUERIE*/
 @media screen and (max-width: 768px) {
-  .barraMenu ul {
+  .barraMenu {
+    flex-direction: row-reverse;
+    padding-right: 15px;
+  }
+  .barraMenu div ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+  .barraMenu div ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+  }
+  .barraMenu div label {
+    display: block;
+  }
+  .barraMenu div input:checked ~ ul {
+    display: block;
+  }
+  .iconNav {
+    margin-left: 20px;
+  }
+  .navIconTitle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .titleNav {
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
     padding-right: 5px;
   }
   .logo {
-    padding-left: 5px;
-    scale: 50%;
-  }
-  .barraMenu ul li {
-    padding: 5px;
-    font-size: 15px;
+    width: 20px;
   }
   .titulo h1 {
     font-size: 40px;
@@ -363,5 +477,31 @@
   .formularioSubmit {
     font-size: 15px;
   }
+  .piePagina {
+    flex-direction: column;
+    height: 100px;
+  }
+  .buttonIg, .buttonFb, .buttonTw {
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    width: 60px;
+  }
 }
-/*FIN-MEDIA-QUERIE*//*# sourceMappingURL=styles.css.map */
+@media screen and (min-width: 768px) {
+  .barraMenu div ul {
+    display: flex;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  .barraMenu div ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+  }
+  .barraMenu div label {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="viajes, vuelos, vacaciones, turismo, italia, roma">
+    <meta name="description" content="Todo lo que necesitas saber sobre Roma, Italia">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Dreams of Travels · Roma</title>
@@ -14,16 +15,24 @@
     <!--barra menú-->
     <nav class="barraMenu">
         <!--logo-->
-        <img class="logo" src="../img/favicon.png">
+        <div class="navIconTitle">
+            <a title="Dreams of Travels" href="../index.html"><img class="logo" alt="Dreams of Travels" src="../img/favicon.png"></a>
+            <a class="titleNav" title="Dreams of Travels" href="../index.html">DREAMS of TRAVELS</a>
+        </div>
         <!--fin logo-->
-            <!--items menu-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./consejos.html">Consejos</a></li>
-                <li><a href="./experiencias.html">Experiencias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        
+        <!--items menu-->
+            <div>
+                    <input type="checkbox" id="menu">
+                    <label class="iconNav" for="menu">☰</label>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./destinos.html">Destinos</a></li>
+                    <li><a href="./consejos.html">Consejos</a></li>
+                    <li><a href="./experiencias.html">Experiencias</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
             <!--fin items menu-->
     </nav>
     <!--fin barra menu-->
@@ -32,7 +41,7 @@
     <header class="cabecera">        
         <section class="titulo">
             <h1>DREAMS of TRAVELS</h1>
-            <h3>Todo lo que necesitas para viajar</h3>
+            <h2>Todo lo que necesitas para viajar</h2>
         </section>
     </header>
     <!--fin cabecera-->
@@ -52,11 +61,20 @@
 
     <!--footer-->
     <footer class="piePagina">
-        <h4>DREAMS of TRAVELS</h4>
+        <h3>DREAMS of TRAVELS</h3>
             <div>
                 <p>
-                    <a href="../index.html">Inicio</a> · <a href="contacto.html">Contacto</a>
-                </p>    
+                    <a href="../index.html">Inicio</a> ·
+                    <a href="./destinos.html">Destinos</a> ·
+                    <a href="./consejos.html">Consejos</a> ·
+                    <a href="./experiencias.html">Experiencias</a> ·
+                    <a href="./contacto.html">Contacto</a>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com"><button class="buttonIg">Instagram</button></a>
+                <a href="https://www.facebook.com"><button class="buttonFb">Facebook</button></a>
+                <a href="https://www.twitter.com"><button class="buttonTw">Twitter</button></a>
             </div>
     </footer>
     <!--fin footer-->

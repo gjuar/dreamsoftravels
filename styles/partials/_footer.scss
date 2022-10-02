@@ -2,18 +2,40 @@
 .piePagina {
     grid-area: footer;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    background-image: $backgroundFooter;
+    background-image: map-get($colores, gradientFooter);
     height: 80px;
     color: white;
-    h4 {
+    h3 {
         font-size: 30px;
     }
-    div p a {
-        text-decoration: none;
-        color: white;
+    div {
+        p {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
+}
+
+.buttonIg {
+    @extend %botonRedes;
+    background: #c13584;
+    border-bottom: 2px solid #e1306c;
+    }
+
+.buttonFb {
+    @extend %botonRedes;
+    background: #3b5998;
+    border-bottom: 2px solid #5075c4;
+}
+
+.buttonTw {
+    @extend %botonRedes;
+    background: #1DA1F2;
+    border-bottom: 2px solid #47b9ff;
 }
 /*FIN-FOOTER*/

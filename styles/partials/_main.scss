@@ -12,15 +12,15 @@
         text-align: center;
         p {
             margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        font-size: 30px;
-        padding-bottom: 60px;   
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            font-size: map-get($fonts, mainText);
+            padding-bottom: 60px;
         }
-        h4 {
-            font-size: 40px;
-        }
+    }
+    h4 {
+        font-size: 40px;
     }
 }
 
@@ -33,19 +33,21 @@
     width: 80%;
     margin: 0 auto;
     padding: 40px;
-    section p {
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        font-size: 30px;
+    section {
+        p {
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            font-size: map-get($fonts, mainText);
+        }
     }
 }
 
 #parrafoExperiencias {
     width: 300px;
     height: 200px;
-    font-size: 20px;
+    font-size: map-get($fonts, secondaryText);
 }
 
 .ciudades {
@@ -62,11 +64,22 @@
 .imageDestino {
     width: 400px;
     height: 200px;
-    padding: 3px;
-    transition: 1s;
-    &:hover {
-        transform: scale(1.2);
-    }
+}
+
+.imgRoma {
+    @include destinos ($imgBorder: crimson)
+}
+
+.imgMilan {
+    @include destinos ($imgBorder: black)
+}
+
+.imgBarcelona {
+    @include destinos ($imgBorder: blue)
+}
+
+.imgMadrid {
+    @include destinos ($imgBorder: yellow)
 }
 
 .imageExperiencias {
