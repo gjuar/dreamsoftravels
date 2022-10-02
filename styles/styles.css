@@ -29,7 +29,6 @@
   grid-template-areas: "nav" "header" "main" "footer";
 }
 
-/*NAV*/
 .barraMenu {
   grid-area: nav;
   display: flex;
@@ -37,37 +36,50 @@
   background-image: linear-gradient(to bottom, #7a2323, #852525, #8f2727, #9a2828, #a52a2a);
   height: 80px;
 }
-.barraMenu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 30px;
+.barraMenu div {
+  align-self: center;
 }
-.barraMenu ul li {
-  list-style-type: none;
-  padding: 10px;
-  font-size: 20px;
-  transition: text-shadow 1s;
-}
-.barraMenu ul li:hover {
-  text-shadow: 10px 5px 5px black;
-  font-size: 25px;
-}
-.barraMenu ul li a {
-  list-style-type: none;
-  color: white;
+.barraMenu div ul li a {
   text-decoration: none;
-  transition: all 1s;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px black;
+}
+.barraMenu div ul li a:hover {
+  text-shadow: 3px 3px 5px black;
+}
+.barraMenu input {
+  display: none;
+}
+.barraMenu label {
+  display: none;
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navIconTitle {
+  padding-left: 20px;
 }
 
 .logo {
-  display: flex;
-  padding: 10px;
-  padding-left: 30px;
+  width: 30px;
   filter: invert(1);
 }
 
-/*FIN-NAV*/
+.titleNav {
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  padding-left: 5px;
+}
+
 /*HEADER*/
 .cabecera {
   grid-area: header;
@@ -365,16 +377,46 @@
 
 /*FIN-TABLA*/
 @media screen and (max-width: 768px) {
+  .barraMenu {
+    flex-direction: row-reverse;
+    padding-right: 15px;
+  }
   .barraMenu ul {
-    padding-right: 5px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
   }
   .barraMenu ul li {
-    padding: 5px;
-    font-size: 15px;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+  }
+  label {
+    display: block;
+  }
+  input:checked ~ ul {
+    display: block;
+  }
+  .iconNav {
+    margin-left: 20px;
+  }
+  .navIconTitle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .titleNav {
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+    padding-right: 5px;
   }
   .logo {
-    padding-left: 5px;
-    scale: 50%;
+    width: 20px;
   }
   .titulo h1 {
     font-size: 40px;
@@ -444,5 +486,18 @@
     font-size: 15px;
     text-shadow: 1px 1px 1px black;
     width: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .barraMenu div ul {
+    display: flex;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  .barraMenu div ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
   }
 }/*# sourceMappingURL=styles.css.map */
