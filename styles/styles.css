@@ -382,7 +382,7 @@
     flex-direction: row-reverse;
     padding-right: 15px;
   }
-  .barraMenu ul {
+  .barraMenu div ul {
     display: none;
     position: absolute;
     top: 80px;
@@ -391,16 +391,16 @@
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
   }
-  .barraMenu ul li {
+  .barraMenu div ul li {
     display: block;
     margin: 0;
     padding: 10px;
     list-style: none;
   }
-  label {
+  .barraMenu div label {
     display: block;
   }
-  input:checked ~ ul {
+  .barraMenu div input:checked ~ ul {
     display: block;
   }
   .iconNav {

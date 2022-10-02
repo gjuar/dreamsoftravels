@@ -11,9 +11,13 @@
     h3 {
         font-size: 30px;
     }
-    div p a {
-        text-decoration: none;
-        color: white;
+    div {
+        p {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
 }
 
