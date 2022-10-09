@@ -95,6 +95,7 @@
 .titulo {
   color: white;
   text-align: center;
+  width: 80%;
 }
 .titulo h1 {
   font-size: 60px;
@@ -419,9 +420,6 @@
   .logo {
     width: 20px;
   }
-  .cabecera {
-    height: 200px;
-  }
   .titulo h1 {
     font-size: 40px;
     text-shadow: 3px 3px 3px black;
@@ -445,11 +443,6 @@
   .video {
     width: 300px;
     height: 200px;
-  }
-  .imageDestino {
-    width: 250px;
-    height: 100px;
-    padding: 1px;
   }
   .ciudades {
     width: auto;

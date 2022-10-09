@@ -47,10 +47,6 @@
         width: 20px;
     }
 
-    .cabecera {
-        height: 200px;
-    }
-
     .titulo {
         h1 {
             font-size: 40px;
@@ -87,7 +83,7 @@
         height: 200px;
     }
 
-    .imageDestino {
+    @mixin destinos($imgBorder) {
         width: 250px;
         height: 100px;
         padding: 1px;
