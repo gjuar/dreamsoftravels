@@ -419,6 +419,9 @@
   .logo {
     width: 20px;
   }
+  .cabecera {
+    height: 200px;
+  }
   .titulo h1 {
     font-size: 40px;
     text-shadow: 3px 3px 3px black;
