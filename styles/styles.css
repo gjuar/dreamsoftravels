@@ -444,6 +444,11 @@
     width: 300px;
     height: 200px;
   }
+  .imageDestino {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+  }
   .ciudades {
     width: auto;
   }

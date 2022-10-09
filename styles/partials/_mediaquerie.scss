@@ -83,6 +83,12 @@
         height: 200px;
     }
 
+    .imageDestino {
+        width: 250px;
+        height: 100px;
+        padding: 1px;
+    }
+
     @mixin destinos($imgBorder) {
         width: 250px;
         height: 100px;
