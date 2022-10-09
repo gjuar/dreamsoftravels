@@ -89,10 +89,20 @@
         padding: 1px;
     }
 
-    @mixin destinos($imgBorder) {
-        width: 250px;
-        height: 100px;
-        padding: 1px;
+    .imgRoma {
+        @include destinosMQ;
+    }
+
+    .imgMilan {
+        @include destinosMQ;
+    }
+
+    .imgBarcelona {
+        @include destinosMQ;
+    }
+
+    .imgMadrid {
+        @include destinosMQ;
     }
 
     .ciudades {
