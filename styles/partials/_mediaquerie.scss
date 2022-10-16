@@ -49,20 +49,21 @@
 
     .titulo {
         h1 {
-            font-size: 40px;
+            font-size: 60px;
             text-shadow: 3px 3px 3px black;
         }
-        h3 {
-            font-size: 20px;
+        h2 {
+            font-size: 40px;
             text-shadow: 3px 3px 3px black;
         }
     }
 
     .contenido {
         padding: 30px;
+        width: 100%;
         section {
             p {
-                width: 200px;
+                width: 80%;
                 font-size: 20px;
                 padding-bottom: 30px;   
             }
@@ -72,7 +73,7 @@
     .contenidoExperiencias {
         section {
             p {
-                width: 200px;
+                width: 80%;
                 font-size: 20px;
             }
         }
@@ -138,6 +139,21 @@
         width: 60px;
     }
 
+    .imgRoma {
+        @include destinosMQ ($imgBorder: crimson)
+    }
+    
+    .imgMilan {
+        @include destinosMQ ($imgBorder: black)
+    }
+    
+    .imgBarcelona {
+        @include destinosMQ ($imgBorder: blue)
+    }
+    
+    .imgMadrid {
+        @include destinosMQ ($imgBorder: yellow)
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -156,6 +172,32 @@
             }
             label {
                 display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .barraMenu {
+        div {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                        text-shadow: 1px 1px 1px black;
+                        &:hover {
+                            text-shadow: 3px 3px 5px black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .piePagina {
+        div {
+            a {
+                font-size: 15px;        
             }
         }
     }

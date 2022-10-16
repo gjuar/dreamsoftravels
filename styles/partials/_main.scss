@@ -7,16 +7,16 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     section {
         text-align: center;
         p {
             margin: 0 auto;
             justify-content: center;
             align-items: center;
-            width: 400px;
+            width: 40%;
             font-size: map-get($fonts, mainText);
-            padding-bottom: 60px;
+            padding: 10px;
         }
     }
     h4 {

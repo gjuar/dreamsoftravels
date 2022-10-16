@@ -9,3 +9,14 @@
         border-color: $imgBorder;
     }
 }
+
+@mixin destinosMQ($imgBorder) {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+    &:hover {
+        transform: scale(1.05);
+        border-style: solid;
+        border-color: $imgBorder;
+    }
+}

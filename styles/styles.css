@@ -17,6 +17,7 @@
   margin: 0px;
   padding: 0px;
   font-family: TW Cen MT;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -43,11 +44,11 @@
 .barraMenu div ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
-  text-shadow: 1px 1px 1px black;
+  font-size: 28px;
+  text-shadow: 2px 2px 10px black;
 }
 .barraMenu div ul li a:hover {
-  text-shadow: 3px 3px 5px black;
+  text-shadow: 5px 5px 7px black;
 }
 .barraMenu input {
   display: none;
@@ -97,11 +98,11 @@
   text-align: center;
 }
 .titulo h1 {
-  font-size: 60px;
+  font-size: 80px;
   text-shadow: 5px 5px 5px black;
 }
 .titulo h2 {
-  font-size: 40px;
+  font-size: 60px;
   text-shadow: 5px 5px 5px black;
 }
 
@@ -115,7 +116,7 @@
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
 }
 .contenido section {
   text-align: center;
@@ -124,9 +125,9 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 40%;
   font-size: 30px;
-  padding-bottom: 60px;
+  padding: 10px;
 }
 .contenido h4 {
   font-size: 40px;
@@ -286,9 +287,14 @@
 .piePagina h3 {
   font-size: 30px;
 }
-.piePagina div p a {
+.piePagina div a {
   text-decoration: none;
   color: white;
+  padding: 5px;
+  font-size: 22px;
+}
+.piePagina div a:hover {
+  color: rgba(255, 255, 255, 0.747);
 }
 
 .buttonIg {
@@ -317,6 +323,7 @@
 .formularioMain {
   padding: 80px;
   align-items: center;
+  text-align: center;
 }
 .formularioMain section {
   width: 500px;
@@ -327,7 +334,10 @@
 }
 
 #formularioFieldset {
-  border: 5px solid crimson;
+  display: flex;
+  flex-direction: column;
+  border: 8px outset crimson;
+  border-radius: 12px;
   padding: 10px;
 }
 
@@ -360,8 +370,7 @@
   border-collapse: collapse;
   border: 5px solid crimson;
 }
-
-.tablaConsejosTitulo {
+.tablaConsejos tr th {
   font-size: 30px;
   padding: 20px;
   border: 3px solid crimson;
@@ -369,8 +378,7 @@
   color: white;
   text-shadow: 2px 5px 5px black;
 }
-
-.tablaConsejosItems {
+.tablaConsejos tr td {
   font-size: 20px;
   padding: 30px;
   border: 2px solid crimson;
@@ -420,23 +428,24 @@
     width: 20px;
   }
   .titulo h1 {
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 3px 3px 3px black;
   }
-  .titulo h3 {
-    font-size: 20px;
+  .titulo h2 {
+    font-size: 40px;
     text-shadow: 3px 3px 3px black;
   }
   .contenido {
     padding: 30px;
+    width: 100%;
   }
   .contenido section p {
-    width: 200px;
+    width: 80%;
     font-size: 20px;
     padding-bottom: 30px;
   }
   .contenidoExperiencias section p {
-    width: 200px;
+    width: 80%;
     font-size: 20px;
   }
   .video {
@@ -488,6 +497,46 @@
     text-shadow: 1px 1px 1px black;
     width: 60px;
   }
+  .imgRoma {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+  }
+  .imgRoma:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: crimson;
+  }
+  .imgMilan {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+  }
+  .imgMilan:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: black;
+  }
+  .imgBarcelona {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+  }
+  .imgBarcelona:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: blue;
+  }
+  .imgMadrid {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+  }
+  .imgMadrid:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: yellow;
+  }
 }
 @media screen and (min-width: 768px) {
   .barraMenu div ul {
@@ -503,5 +552,17 @@
   }
   .barraMenu div label {
     display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .barraMenu div ul li a {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+  }
+  .barraMenu div ul li a:hover {
+    text-shadow: 3px 3px 5px black;
+  }
+  .piePagina div a {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=styles.css.map */
