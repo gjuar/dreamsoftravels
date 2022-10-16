@@ -90,6 +90,22 @@
         padding: 1px;
     }
 
+    .imgRoma {
+        @include destinosMQ;
+    }
+
+    .imgMilan {
+        @include destinosMQ;
+    }
+
+    .imgBarcelona {
+        @include destinosMQ;
+    }
+
+    .imgMadrid {
+        @include destinosMQ;
+    }
+
     .ciudades {
         width: auto;
     }

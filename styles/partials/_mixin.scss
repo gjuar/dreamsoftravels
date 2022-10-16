@@ -10,6 +10,7 @@
     }
 }
 
+<<<<<<< HEAD
 @mixin destinosMQ($imgBorder) {
     width: 200px;
     height: 100px;
@@ -19,4 +20,10 @@
         border-style: solid;
         border-color: $imgBorder;
     }
+=======
+@mixin destinosMQ {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+>>>>>>> e69c3da81edccf1883a3774d5495f0a6a78b971d
 }

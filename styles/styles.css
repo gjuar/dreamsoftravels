@@ -96,6 +96,7 @@
 .titulo {
   color: white;
   text-align: center;
+  width: 80%;
 }
 .titulo h1 {
   font-size: 80px;
@@ -453,6 +454,26 @@
     height: 200px;
   }
   .imageDestino {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+  }
+  .imgRoma {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+  }
+  .imgMilan {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+  }
+  .imgBarcelona {
+    width: 250px;
+    height: 100px;
+    padding: 1px;
+  }
+  .imgMadrid {
     width: 250px;
     height: 100px;
     padding: 1px;
