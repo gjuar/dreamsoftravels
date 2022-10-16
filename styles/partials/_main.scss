@@ -67,19 +67,19 @@
 }
 
 .imgRoma {
-    @include destinos ($imgBorder: crimson)
+    @include destinos ($imgBorder: crimson);
 }
 
 .imgMilan {
-    @include destinos ($imgBorder: black)
+    @include destinos ($imgBorder: black);
 }
 
 .imgBarcelona {
-    @include destinos ($imgBorder: blue)
+    @include destinos ($imgBorder: blue);
 }
 
 .imgMadrid {
-    @include destinos ($imgBorder: yellow)
+    @include destinos ($imgBorder: yellow);
 }
 
 .imageExperiencias {
@@ -90,6 +90,11 @@
     animation-delay: 2s;
     width: 150px;
     transition: 1s;
+}
+
+.maps {
+    width: 600px;
+    height: 400px;
 }
 /*FIN-MAIN*/
 

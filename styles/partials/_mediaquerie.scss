@@ -91,19 +91,19 @@
     }
 
     .imgRoma {
-        @include destinosMQ;
+        @include destinosMQ ($imgBorder: crimson);
     }
 
     .imgMilan {
-        @include destinosMQ;
+        @include destinosMQ ($imgBorder: black);
     }
 
     .imgBarcelona {
-        @include destinosMQ;
+        @include destinosMQ ($imgBorder: blue);
     }
 
     .imgMadrid {
-        @include destinosMQ;
+        @include destinosMQ ($imgBorder: yellow);
     }
 
     .ciudades {
@@ -169,6 +169,11 @@
     
     .imgMadrid {
         @include destinosMQ ($imgBorder: yellow)
+    }
+
+    .maps {
+        width: 500px;
+        height: 300px;
     }
 }
 

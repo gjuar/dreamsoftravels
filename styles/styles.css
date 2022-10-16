@@ -237,6 +237,11 @@
   transition: 1s;
 }
 
+.maps {
+  width: 600px;
+  height: 400px;
+}
+
 /*FIN-MAIN*/
 /*ANIMACION*/
 @-webkit-keyframes avionExperiencias {
@@ -459,24 +464,44 @@
     padding: 1px;
   }
   .imgRoma {
-    width: 250px;
+    width: 200px;
     height: 100px;
-    padding: 1px;
+    padding: 2px;
+  }
+  .imgRoma:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: crimson;
   }
   .imgMilan {
-    width: 250px;
+    width: 200px;
     height: 100px;
-    padding: 1px;
+    padding: 2px;
+  }
+  .imgMilan:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: black;
   }
   .imgBarcelona {
-    width: 250px;
+    width: 200px;
     height: 100px;
-    padding: 1px;
+    padding: 2px;
+  }
+  .imgBarcelona:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: blue;
   }
   .imgMadrid {
-    width: 250px;
+    width: 200px;
     height: 100px;
-    padding: 1px;
+    padding: 2px;
+  }
+  .imgMadrid:hover {
+    transform: scale(1.05);
+    border-style: solid;
+    border-color: yellow;
   }
   .ciudades {
     width: auto;
@@ -557,6 +582,10 @@
     transform: scale(1.05);
     border-style: solid;
     border-color: yellow;
+  }
+  .maps {
+    width: 500px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 768px) {
