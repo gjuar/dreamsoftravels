@@ -110,38 +110,47 @@
         width: auto;
     }
 
-    .formularioItem {
-        font-size: 15px;
-    }
+    // .formularioItem {
+    //     font-size: 15px;
+    // }
 
     .formularioMain {
-        padding: 0;
+        padding: 0px;
         padding-top: 40px;
         padding-bottom: 40px;
         section {
-            width: 300px;
+            width: 80%;
             h3 {
                 font-size: 30px;
             }
+            form {
+                display: flex;
+                flex-direction: column;
+                border: 3px outset $colorPrincipal;
+                border-radius: 12px;
+                padding: 10px;
+                label {
+                    font-size: 15px;
+                }
+                input {
+                    font-size: 15px;
+                }
+            }
         }
     }
-    
-    #formularioFieldset {
-        border: 3px solid crimson;
-    }
-    
-    #submit {
-        font-size: 15px;
-    }
-    
-    #reset {
-        font-size: 15px;
-    }
-    
+
     .formularioSubmit {
         font-size: 15px;
     }
 
+    .submit {
+        font-size: 15px;
+    }
+    
+    .reset {
+        font-size: 15px;
+    }
+    
     .piePagina {
         flex-direction: column;
         height: 100px;

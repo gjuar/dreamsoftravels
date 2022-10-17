@@ -1,13 +1,6 @@
 /*FORMULARIO*/
-.formularioItem {
-    display: flex;
-    padding: 3px;
-    font-size: 20px;
-}
-
 .formularioMain {
-    padding: 80px;
-    align-items: center;
+    padding: 40px;
     text-align: center;
     section {
         width: 500px;
@@ -15,29 +8,31 @@
         h3 {
             font-size: 50px;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            border: 8px outset $colorPrincipal;
+            border-radius: 12px;
+            padding: 10px;
+            label {
+                display: flex;
+                padding: 3px;
+                font-size: 20px;
+            }
+            input {
+                display: flex;
+                padding: 3px;
+                font-size: 20px;
+            }
+            textarea {
+                width: 100%;
+                height: 100px;
+                resize: none;
+                font-size: 20px;
+                padding: 3px;
+            }
+        }
     }
-}
-
-#formularioFieldset {
-    display: flex;
-    flex-direction: column;
-    border: 8px outset $colorPrincipal;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-#submit {
-    font-size: 20px;
-    width: 20%;
-}
-
-#reset {
-    font-size: 20px;
-    width: 30%;
-}
-
-#acepto {
-    margin-bottom: 10px;
 }
 
 .formularioSubmit {
@@ -45,5 +40,24 @@
     padding: 5px;
     font-size: 20px;
     margin-top: 15px;
+    label {
+        display: inline-block !important;
+    }
+    input {
+        display: inline-block !important;
+    }
 }
+
+.submit {
+    @include buttonContacto ($width: 20%);
+    
+}
+
+.reset {
+    @include buttonContacto ($width: 30%);
+}
+
+
+
+
 /*FIN-FORMULARIO*/

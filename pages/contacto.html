@@ -50,23 +50,23 @@
         <section>
             <h3>Contacto</h3>
             <form id="formularioFieldset">
-                <label class="formularioItem" for="nombre">Nombre</label>
-                    <input class="formularioItem" type="text" name="nombre" placeholder="Ingresa tu nombre">
-                <label class="formularioItem" for="apellido">Apellido</label>
-                    <input class="formularioItem" type="text" name="apellido" placeholder="Ingresa tu apellido">
-                <label class="formularioItem" for="mail">Mail</label>
-                    <input class="formularioItem" type="email" name="mail" placeholder="Ingresa tu mail">
-                <label class="formularioItem" for="mensaje">Mensaje</label>
-                    <textarea class="formularioItem" name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
+                <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Ingresa tu apellido">
+                <label for="mail">Mail</label>
+                    <input type="email" name="mail" placeholder="Ingresa tu mail">
+                <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
                 <div class="formularioSubmit">
-                    <div id="acepto">
-                        <label for="checkbox">Acepto que me llego publicidad relacionada al sitio
-                        <input type="checkbox" name="checkbox">
+                    <div>
+                        <label id="acepto" for="checkbox">Acepto que me llego publicidad relacionada al sitio
+                        <input id="acepto" type="checkbox" name="checkbox">
                         </label>
                     </div>
                     <div>
-                        <input id="submit" type="submit">
-                        <input id="reset" type="reset">
+                        <input class="submit" type="submit">
+                        <input class="reset" type="reset">
                     </div>
                 </div>
             </form>
