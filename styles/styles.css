@@ -532,17 +532,17 @@
     font-size: 20px;
     padding-bottom: 30px;
   }
+  .contenido .imgContenido {
+    width: 200px;
+    height: 100px;
+  }
+  .contenido .imgNoticias {
+    width: 200px;
+    height: 100px;
+  }
   .contenidoExperiencias section p {
     width: 80%;
     font-size: 20px;
-  }
-  .imgContenido {
-    width: 200px;
-    height: 100px;
-  }
-  .imgNoticias {
-    width: 200px;
-    height: 100px;
   }
   .imageDestino {
     width: 250px;
