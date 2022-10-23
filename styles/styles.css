@@ -259,6 +259,11 @@
   padding-bottom: 20px;
 }
 
+.iconConsejos {
+  width: 100px;
+  height: 100px;
+}
+
 /*FIN-MAIN*/
 /*ANIMACION*/
 @-webkit-keyframes avionExperiencias {
